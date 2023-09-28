@@ -6,17 +6,51 @@ In most of the JS Frameworks we avoid using semi-colon. We should also make our 
 
 ## Primitive Datatypes
 
+7 types: String, Number, Boolean, null, undefined, symbol
+
+JavaScript is a dynamically typed language, which means that data types of variables are determined by the value they hold at runtime and can change throughout the program as we assign different values to them.
+
+    Example:  const score = 100
+              const scoreValue = 100.3
+
+              const isLoggedIn = false
+              const outsideTemp = null
+              let userEmail;
+
+              const id = Symbol('123')
+              const anotherId = Symbol('123')
+
+              console.log(id == anotherId);
+
+              const bigNumber = 23465634827495820n  // n at the end of number represnets bigint
+
 let name = "Shreya" // string datatype
 let age = 20 // int dataype
 let isLoggedIn = false // boolean datatype
 
 number => 2^53
-biginit
+bigint
 string => "value inside double-quotes"
 boolean => true/false
 null => stand-alone value, it is like an empty value
 undefined => value not assigned to dataype
-symnol => used to find uniqueness in a component
+symbol => used to find uniqueness in a component
+
+## Reference Datatype (Non-Primitive)
+
+It includes array, objects and functions
+
+    Example:  const persons = ["shreya", "yash", "saavi"];
+              let obj = {
+                name: "yash",
+                age: 21,
+              }
+
+We can also store a function as variable,
+
+    Example:  const myFunction = function(){
+                    console.log("Hello World");
+              }  // The dataype of myFunction is function only
 
 ## Object
 
